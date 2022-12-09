@@ -12,154 +12,173 @@
     />
     <title>Frontend Mentor | News Homepage</title>
   </head>
-  <body>
-    <header>
-      <div>
-        <img src="./assets/images/logo.svg" alt="The logo" />
-      </div>
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-offWhite font-inter text-[0.9375rem]"
+  >
+    <div class="m-4">
+      <header class="relative my-8 flex items-center justify-between md:my-16">
+        <div>
+          <img src="./assets/images/logo.svg" alt="The logo" />
+        </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-      </nav>
-
-      <button id="open-menu-btn">
-        <img
-          src="./assets/images/icon-menu.svg"
-          alt="Hamburger icon"
-          aria-hidden="true"
-        />
-        <span class="sr-only">Open navigation menu</span>
-      </button>
-
-      <div>
-        <button id="close-menu-btn">
-          <img
-            src="./assets/images/icon-menu-close.svg"
-            alt="Cross icon"
-            aria-hidden="true"
-          />
-          <span class="sr-only">Close navigation menu</span>
-        </button>
-
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Popular</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Categories</a></li>
+        <nav class="hidden md:block">
+          <ul class="flex gap-8 text-lg text-darkGrayishBlue">
+            <li class="transition-colors duration-300 hover:text-softRed">
+              <a href="#">Home</a>
+            </li>
+            <li class="transition-colors duration-300 hover:text-softRed">
+              <a href="#">New</a>
+            </li>
+            <li class="transition-colors duration-300 hover:text-softRed">
+              <a href="#">Popular</a>
+            </li>
+            <li class="transition-colors duration-300 hover:text-softRed">
+              <a href="#">Trending</a>
+            </li>
+            <li class="transition-colors duration-300 hover:text-softRed">
+              <a href="#">Categories</a>
+            </li>
           </ul>
         </nav>
-      </div>
-    </header>
 
-    <main>
-      <article>
-        <picture>
-          <source
-            media="(min-width: 640px)"
-            srcset="./assets/images/image-web-3-desktop.jpg"
-          />
+        <button id="open-menu-btn" class="md:hidden">
           <img
-            src="./assets/images/image-web-3-mobile.jpg"
-            alt="A variety of neatly arranged colorful wooden building blocks"
+            src="./assets/images/icon-menu.svg"
+            alt="Hamburger icon"
+            aria-hidden="true"
           />
-        </picture>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button>Read more</button>
-      </article>
+          <span class="sr-only">Open navigation menu</span>
+        </button>
 
-      <section>
-        <h2>New</h2>
+        <div class="fixed inset-0 grid translate-x-full grid-cols-[32%_auto]">
+          <!-- opaque background -->
+          <div class="bg-veryDarkBlue opacity-50"></div>
 
-        <a href="#">
-          <article>
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </article>
-        </a>
-
-        <a href="#">
-          <article>
-            <h3>The Downsides of AI Artistry</h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </article>
-        </a>
-
-        <a href="#">
-          <article>
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </article>
-        </a>
-      </section>
-
-      <div>
-        <a href="#">
-          <article>
-            <div>
+          <div class="flex w-full flex-col bg-offWhite p-6 opacity-100">
+            <button id="close-menu-btn" class="self-end">
               <img
-                src="./assets/images/image-retro-pcs.jpg"
-                alt="A retro computer surrounded by other retro technology"
+                src="./assets/images/icon-menu-close.svg"
+                alt="Cross icon"
+                aria-hidden="true"
               />
-            </div>
-            <div>
-              <span>01</span>
-              <h2>Reviving Retro PCs</h2>
-              <p>What happens when old PCs are given modern upgrades?</p>
-            </div>
-          </article>
-        </a>
+              <span class="sr-only">Close navigation menu</span>
+            </button>
 
-        <a href="#">
-          <article>
-            <div>
-              <img
-                src="./assets/images/image-top-laptops.jpg"
-                alt="A closeup of a laptop keyboard"
-              />
-            </div>
-            <div>
-              <span>02</span>
-              <h2>Top 10 Laptops of 2022</h2>
-              <p>Our best picks for various needs and budgets.</p>
-            </div>
-          </article>
-        </a>
+            <nav class="mt-20">
+              <ul class="flex flex-col gap-5 text-lg text-darkGrayishBlue">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-        <a href="#">
-          <article>
-            <div>
-              <img
-                src="./assets/images/image-gaming-growth.jpg"
-                alt="A video game controller about to be caught by a hand"
-              />
-            </div>
-            <div>
-              <span>03</span>
-              <h2>The Growth of Gaming</h2>
-              <p>How the pandemic has sparked fresh opportunities.</p>
-            </div>
-          </article>
-        </a>
-      </div>
-    </main>
+      <main>
+        <article>
+          <picture>
+            <source
+              media="(min-width: 640px)"
+              srcset="./assets/images/image-web-3-desktop.jpg"
+            />
+            <img
+              src="./assets/images/image-web-3-mobile.jpg"
+              alt="A variety of neatly arranged colorful wooden building blocks"
+            />
+          </picture>
+          <h1>The Bright Future of Web 3.0?</h1>
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button>Read more</button>
+        </article>
+
+        <section>
+          <h2>New</h2>
+          <a href="#">
+            <article>
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+          </a>
+
+          <a href="#">
+            <article>
+              <h3>The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+          </a>
+
+          <a href="#">
+            <article>
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </a>
+        </section>
+
+        <div>
+          <a href="#">
+            <article>
+              <div>
+                <img
+                  src="./assets/images/image-retro-pcs.jpg"
+                  alt="A retro computer surrounded by other retro technology"
+                />
+              </div>
+              <div>
+                <span>01</span>
+                <h2>Reviving Retro PCs</h2>
+                <p>What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#">
+            <article>
+              <div>
+                <img
+                  src="./assets/images/image-top-laptops.jpg"
+                  alt="A closeup of a laptop keyboard"
+                />
+              </div>
+              <div>
+                <span>02</span>
+                <h2>Top 10 Laptops of 2022</h2>
+                <p>Our best picks for various needs and budgets.</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="#">
+            <article>
+              <div>
+                <img
+                  src="./assets/images/image-gaming-growth.jpg"
+                  alt="A video game controller about to be caught by a hand"
+                />
+              </div>
+              <div>
+                <span>03</span>
+                <h2>The Growth of Gaming</h2>
+                <p>How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </main>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
