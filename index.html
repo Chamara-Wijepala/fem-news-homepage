@@ -13,7 +13,7 @@
     <title>Frontend Mentor | News Homepage</title>
   </head>
   <body
-    class="flex min-h-screen flex-col items-center justify-center bg-offWhite font-inter text-[0.9375rem]"
+    class="flex min-h-screen flex-col items-center justify-center bg-offWhite font-inter text-[0.9375rem] text-darkGrayishBlue"
   >
     <div class="m-4">
       <header class="relative my-8 flex items-center justify-between md:my-16">
@@ -22,7 +22,7 @@
         </div>
 
         <nav class="hidden md:block">
-          <ul class="flex gap-8 text-lg text-darkGrayishBlue">
+          <ul class="flex gap-8 text-lg">
             <li class="transition-colors duration-300 hover:text-softRed">
               <a href="#">Home</a>
             </li>
@@ -68,7 +68,7 @@
             </button>
 
             <nav class="mt-20">
-              <ul class="flex flex-col gap-5 text-lg text-darkGrayishBlue">
+              <ul class="flex flex-col gap-5 text-lg">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">New</a></li>
                 <li><a href="#">Popular</a></li>
@@ -81,7 +81,7 @@
       </header>
 
       <main>
-        <article>
+        <article class="grid gap-8">
           <picture>
             <source
               media="(min-width: 640px)"
@@ -92,13 +92,22 @@
               alt="A variety of neatly arranged colorful wooden building blocks"
             />
           </picture>
-          <h1>The Bright Future of Web 3.0?</h1>
+
+          <h1 class="text-5xl font-extrabold text-veryDarkBlue">
+            The Bright Future of Web 3.0?
+          </h1>
+
           <p>
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
-          <button>Read more</button>
+
+          <button
+            class="letter place-self-start bg-softRed py-4 px-10 text-base font-bold uppercase tracking-[0.3em] text-offWhite transition-colors duration-300 hover:bg-veryDarkBlue"
+          >
+            Read more
+          </button>
         </article>
 
         <section>

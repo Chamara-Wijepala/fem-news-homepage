@@ -746,6 +746,10 @@ video {
   gap: 1.25rem;
 }
 
+.place-self-start {
+  place-self: start;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -764,6 +768,11 @@ video {
   background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
 }
 
+.bg-softRed {
+  --tw-bg-opacity: 1;
+  background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
+}
+
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -774,6 +783,26 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .font-inter {
@@ -794,6 +823,50 @@ video {
   line-height: 1.75rem;
 }
 
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+.tracking-\[0\.2em\] {
+  letter-spacing: 0.2em;
+}
+
+.tracking-\[0\.3em\] {
+  letter-spacing: 0.3em;
+}
+
 .text-grayishBlue {
   --tw-text-opacity: 1;
   color: hsl(233 8% 79% / var(--tw-text-opacity));
@@ -802,6 +875,16 @@ video {
 .text-darkGrayishBlue {
   --tw-text-opacity: 1;
   color: hsl(236 13% 42% / var(--tw-text-opacity));
+}
+
+.text-veryDarkBlue {
+  --tw-text-opacity: 1;
+  color: hsl(240 100% 5% / var(--tw-text-opacity));
+}
+
+.text-offWhite {
+  --tw-text-opacity: 1;
+  color: hsl(36 100% 99% / var(--tw-text-opacity));
 }
 
 .opacity-5 {
@@ -852,6 +935,11 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.hover\:bg-veryDarkBlue:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
 }
 
 .hover\:text-softRed:hover {
