@@ -543,6 +543,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.bg-softOrange {
+  --tw-bg-opacity: 1;
+  background-color: hsl(35 77% 62% / var(--tw-bg-opacity));
+}
+
+.bg-offWhite {
+  --tw-bg-opacity: 1;
+  background-color: hsl(36 100% 99% / var(--tw-bg-opacity));
+}
+
 .font-inter {
   font-family: Inter, sans-serif;
 }
