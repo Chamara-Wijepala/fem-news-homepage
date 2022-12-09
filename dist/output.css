@@ -419,6 +419,36 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "Inter";
+
+  font-weight: 400;
+
+  src: local(""),
+      url("../assets/fonts/inter-v12-latin-regular.woff2") format("woff2"),
+      url("../assets/fonts/inter-v12-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-weight: 700;
+
+  src: local(""),
+      url("../assets/fonts/inter-v12-latin-700.woff2") format("woff2"),
+      url("../assets/fonts/inter-v12-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-weight: 800;
+
+  src: local(""),
+      url("../assets/fonts/inter-v12-latin-800.woff2") format("woff2"),
+      url("../assets/fonts/inter-v12-latin-800.woff") format("woff");
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -513,9 +543,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.font-inter {
+  font-family: Inter, sans-serif;
 }
 
 .text-5xl {
