@@ -15,7 +15,7 @@
   <body
     class="flex min-h-screen flex-col items-center justify-center bg-offWhite font-inter text-[0.9375rem] text-darkGrayishBlue"
   >
-    <div class="container max-w-[75rem] p-4">
+    <div class="container max-w-3xl p-4 lg:max-w-[75rem]">
       <header class="relative my-8 flex items-center justify-between md:my-16">
         <div>
           <img src="./assets/images/logo.svg" alt="The logo" />
@@ -158,11 +158,12 @@
           </article>
         </section>
 
-        <article class="grid grid-cols-3 gap-5">
+        <article class="grid grid-cols-[min-content_1fr_1fr] gap-5">
           <div>
             <img
               src="./assets/images/image-retro-pcs.jpg"
               alt="A retro computer surrounded by other retro technology"
+              class="max-w-[100px]"
             />
           </div>
           <div class="col-span-2 flex flex-col justify-between">
@@ -180,11 +181,14 @@
           </div>
         </article>
 
-        <article class="my-8 grid grid-cols-3 gap-5 lg:my-0">
+        <article
+          class="my-8 grid grid-cols-[min-content_1fr_1fr] gap-5 lg:my-0"
+        >
           <div>
             <img
               src="./assets/images/image-top-laptops.jpg"
               alt="A closeup of a laptop keyboard"
+              class="max-w-[100px]"
             />
           </div>
           <div class="col-span-2 flex flex-col justify-between">
@@ -202,11 +206,12 @@
           </div>
         </article>
 
-        <article class="grid grid-cols-3 gap-5">
+        <article class="grid grid-cols-[min-content_1fr_1fr] gap-5">
           <div>
             <img
               src="./assets/images/image-gaming-growth.jpg"
               alt="A video game controller about to be caught by a hand"
+              class="max-w-[100px]"
             />
           </div>
           <div class="col-span-2 flex flex-col justify-between">
